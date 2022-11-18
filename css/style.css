@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Fragment Mono', monospace;
+}
+.nav{
+
+    width: 20%;
+}
+.nav__link{
+    color: #303440;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+}
+.nav__link-inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+.nav__link-inside:hover{
+    background-color: whitesmoke;
+}
+.list{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 16px 16px 0;
+    background: white;
+
+}
+.list__item{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+   overflow: hidden;
+}
+.list__item--click{
+    cursor: pointer;
+}
+.list__buttom{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 70%;
+    margin: 0%;
+}
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+.list__arrow{
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+.Conteiner {
+    display: flex;
+    
+}
+.Conteiner_Text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+}
+.Item1 {
+   height: 33.3vh;
+
+    background-color: rgb(250, 13, 187);
+}
+.Item2 {
+    height: 33.3vh;
+    background-color: black;
+}
+.Item3 {
+    height: 33.3vh;
+    
+    background-color: green;
+}
