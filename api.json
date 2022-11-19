@@ -1,0 +1,38 @@
+[
+    {
+        "Precio": 7000,
+        "Id": 3,
+        "Title": "Habitacion Triple",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_960_720.jpg"
+    },
+    {
+        "Precio": 10000,
+        "Id": 4,
+        "Title": "Penthouse",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_960_720.jpg"
+    },
+    {
+        "Precio": 1000,
+        "Id": 5,
+        "Title": "Media Pension",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg"
+    },
+    {
+        "Precio": 1800,
+        "Id": 6,
+        "Title": "Pension Completa",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2015/05/31/11/18/table-setting-791148_960_720.jpg"
+    },
+    {
+        "Precio": 3000,
+        "Id": 7,
+        "Title": "Minibar",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2017/04/07/06/08/the-ancient-town-2210280_960_720.jpg"
+    },
+    {
+        "Precio": 1500,
+        "Id": 8,
+        "Title": "Traslado",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2014/01/04/13/34/taxi-238478_960_720.jpg"
+    }
+]
