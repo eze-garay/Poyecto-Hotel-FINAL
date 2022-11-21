@@ -4,6 +4,7 @@ const footer = document.getElementById("footer")
 const templateCard = document.getElementById("template-card").content
 const templateFooter = document.getElementById("template-footer").content
 const templateCarrito = document.getElementById("template-carrito").content
+const BotomCompra = document.getElementById("BotomCompra")
 const fragment = document.createDocumentFragment()
 let Carrito = {}
 
