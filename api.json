@@ -1,38 +1,50 @@
 [
     {
-        "Precio": 7000,
-        "Id": 3,
-        "Title": "Habitacion Triple",
+        "precio": 4000,
+        "id": 1,
+        "title": "Habitacion Simple",
+         "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_960_720.jpg"
+    },
+    {
+        "precio": 6000,
+        "id": 2,
+        "title": "Habitacion Doble",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/10/13/09/06/luxury-villas-1737167_960_720.jpg"
+    },
+    {
+        "precio": 7000,
+        "id": 3,
+        "title": "Habitacion Triple",
         "thumbnailUrl": "https://cdn.pixabay.com/photo/2021/08/27/01/33/bedroom-6577523_960_720.jpg"
     },
     {
-        "Precio": 10000,
-        "Id": 4,
-        "Title": "Penthouse",
+        "precio": 10000,
+        "id": 4,
+        "title": "Penthouse",
         "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_960_720.jpg"
     },
     {
-        "Precio": 1000,
-        "Id": 5,
-        "Title": "Media Pension",
+        "precio": 1000,
+        "id": 5,
+        "title": "Media Pension",
         "thumbnailUrl": "https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg"
     },
     {
-        "Precio": 1800,
-        "Id": 6,
-        "Title": "Pension Completa",
+        "precio": 1800,
+        "id": 6,
+        "title": "Pension Completa",
         "thumbnailUrl": "https://cdn.pixabay.com/photo/2015/05/31/11/18/table-setting-791148_960_720.jpg"
     },
     {
-        "Precio": 3000,
-        "Id": 7,
-        "Title": "Minibar",
+        "precio": 3000,
+        "id": 7,
+        "title": "Minibar",
         "thumbnailUrl": "https://cdn.pixabay.com/photo/2017/04/07/06/08/the-ancient-town-2210280_960_720.jpg"
     },
     {
-        "Precio": 1500,
-        "Id": 8,
-        "Title": "Traslado",
-        "thumbnailUrl": "https://cdn.pixabay.com/photo/2014/01/04/13/34/taxi-238478_960_720.jpg"
+        "precio": 1500,
+        "id": 8,
+        "title": "Traslado",
+        "thumbnailUrl": "https://cdn.pixabay.com/photo/2017/04/23/08/43/new-york-2253292_960_720.jpg"
     }
 ]

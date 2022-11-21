@@ -7,11 +7,18 @@
 body{
     font-family: 'Fragment Mono', monospace;
 }
+button{
+    background-color: #000000;
+    background-image: linear-gradient(0deg,  #000000 0%, #B5FFFC 100%);
+}
 
 /* nav */
 .nav{
 
     width: 20%;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    
 }
 .nav__link{
     color: #303440;
@@ -25,7 +32,9 @@ body{
     text-align: left;
 }
 .nav__link-inside:hover{
-    background-color: whitesmoke;
+background-color: #FFDEE9;
+background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
 }
 .list{
     width: 100%;
@@ -34,7 +43,7 @@ body{
     justify-content: center;
     flex-direction: column;
     border-radius: 0 16px 16px 0;
-    background: white;
+    
 
 }
 .list__item{
@@ -98,11 +107,12 @@ body{
 
 /* Libreria */
 .Conteiner_Libreria{
-        width: 80%;
+        width: 70%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
      
 }
+
 .ItemLibreria_1{
 
 
