@@ -91,19 +91,21 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 
 }
 .Item1 {
-   height: 33.3vh;
-
-    background-color: rgb(250, 13, 187);
+   height: 20%;
+   font-family: 'Montserrat', sans-serif;
+   text-decoration:underline ;
+   text-align: center;
+   padding-top: 40px;
+   background-color: #FFDEE9;
+   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 .Item2 {
-    height: 33.3vh;
-    background-color: black;
+    height: 80%;
+    background-image: url(https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.Item3 {
-    height: 33.3vh;
-    
-    background-color: green;
-}
+
 
 /* Libreria */
 .Conteiner_Libreria{

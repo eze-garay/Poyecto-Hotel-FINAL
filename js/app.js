@@ -135,3 +135,9 @@ if (e.target.classList.contains('btn-danger')) {
 e.stopPropagation()
 }
 }
+
+const BotonComprar = document.getElementById("BotonComprar")
+BotonComprar.onclick =() => {
+BotomCompra.addEventListener("submit", (event) => {
+  })
+}
