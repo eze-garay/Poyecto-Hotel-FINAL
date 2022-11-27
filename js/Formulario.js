@@ -15,55 +15,64 @@ if (this.value.length>=1) {
     });
     
 }
+let validarcorreo = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-let expresion = (/\w+@+\w+\.+[a-z]/);
 
-function Validar() {
-  if (nombre === "" || correo === "" || telefono === "" || mensaje === "" ) {
-  alert("Todos los campos son obligatorios");
-    return false; 
-}
-else if(isNaN(telefono)){
-alert("El teléfono ingresado no es un número")
-return false;
-}
-else if(expresion.test(correo)){
-  alert("El mail no es correcto")
+
+function validar() {
+if (nombre.value === "" || correo.value === "" || telefono.value === "" || mensaje.value === "") {
+  Swal.fire ("Es necesario completar todos los campos")
   return false;
+
+  }
+  else if (isNaN(telefono.value)) {
+    Swal.fire("El teléfono ingresado no es un número")
+    return false;
+  } 
+  else if (validarcorreo.test(correo.value)) {
+    Swal.fire("El mail no es correcto")
+    return false;
+  } else {
+    return true;
+  }
 }
-}
+  
+
+
 
 boton.onclick = () => {
     let formulario = document.getElementById("Form");
     formulario.addEventListener("submit", (event) => {
       event.preventDefault();
-      const Usuario = {
-        Nombre: nombre.value,
-        Correo: correo.value,
-        Telefono: telefono.value,
-        Mensaje: mensaje.value
-      }
-      Swal.fire({
-        title: "Bienvenido",
-        text: "¿Desea enviar este mensaje?",
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Enviar'
-      }).then((result) => {
-        if (result.isConfirmed) {
-          Swal.fire(
-            'Su menjase ha sido enviado.',
-          ) 
-        } else {
-            Swal.fire(
-                'Su mensaje no ha sido enviado.',
-              )  
+
+      if (validar()) {
+        const Usuario = {
+          Nombre: nombre.value,
+          Correo: correo.value,
+          Telefono: telefono.value,
+          Mensaje: mensaje.value
         }
-      })
-      localStorage.setItem("InfoUsuario", JSON.stringify(Usuario))
-      formulario.reset();
-    })
-  }
+        Swal.fire({
+          title: "Bienvenido",
+          text: "¿Desea enviar este mensaje?",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#3085d6',
+          cancelButtonColor: '#d33',
+          confirmButtonText: 'Enviar'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire(
+              'Su menjase ha sido enviado.',
+            ) 
+          } else {
+              Swal.fire(
+                  'Su mensaje no ha sido enviado.',
+                )  
+          }
+        })
+        localStorage.setItem("InfoUsuario", JSON.stringify(Usuario))
+        formulario.reset();
+      }}
+    )}
 
