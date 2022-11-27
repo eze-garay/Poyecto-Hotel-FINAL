@@ -90,20 +90,24 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
     flex-direction: column;
 
 }
-.Item1 {
-   height: 20%;
-   font-family: 'Montserrat', sans-serif;
-   text-decoration:underline ;
-   text-align: center;
-   padding-top: 40px;
-   background-color: #FFDEE9;
-   background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
-}
+
+
 .Item2 {
-    height: 80%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
     background-image: url(https://cdn.pixabay.com/photo/2016/03/28/09/34/bedroom-1285156_960_720.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Text_Titulo{
+    margin-top: 150px;
+    color: gainsboro;
+}
+.Text_Titulo-P{
+    color: gainsboro;
 }
 
 
@@ -121,19 +125,25 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
     background-color: rgb(250, 13, 187); 
 }
 
+
 /* Contacto */
 .Conteiner_Contacto{
-    width: 80%;
+    width: 100vh;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    
+    
 }
-.ItemContacto_1{
-    height: 10%;
+.Contacto_1{
+   margin: 40px;
+   align-self: flex-start;
+}
 
-    background-color: rgb(250, 13, 187);
-}
+
+
 .ItemContacto_2{
-    height: 90%;
+    margin: 40px;
+    align-self: flex-start;
 
     
 }
@@ -141,7 +151,7 @@ background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
     width: 500px;
     max-width: 100%;
     margin: auto;
-    margin-top: 30px;
+   
     padding: 20px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
     position: relative;

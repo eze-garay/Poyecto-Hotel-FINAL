@@ -4,6 +4,7 @@ const telefono = document.getElementById("telefono")
 const mensaje = document.getElementById("mensaje")
 const boton = document.getElementById("BotonDatos")
 let inputs = document.getElementsByClassName ("Formulario_Input")
+
 for (let i = 0; i < inputs.length; i++){
     inputs[i].addEventListener ( "keyup", function () {
 if (this.value.length>=1) {
@@ -13,6 +14,23 @@ if (this.value.length>=1) {
 }
     });
     
+}
+
+let expresion = (/\w+@+\w+\.+[a-z]/);
+
+function Validar() {
+  if (nombre === "" || correo === "" || telefono === "" || mensaje === "" ) {
+  alert("Todos los campos son obligatorios");
+    return false; 
+}
+else if(isNaN(telefono)){
+alert("El teléfono ingresado no es un número")
+return false;
+}
+else if(expresion.test(correo)){
+  alert("El mail no es correcto")
+  return false;
+}
 }
 
 boton.onclick = () => {
@@ -40,7 +58,7 @@ boton.onclick = () => {
           ) 
         } else {
             Swal.fire(
-                'Su menjase no ha sido enviado.',
+                'Su mensaje no ha sido enviado.',
               )  
         }
       })

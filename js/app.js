@@ -114,6 +114,14 @@ const pintarFooter = () => {
         Carrito = {}
         pintarCarrito ()
     })
+    const BotonFinalizar = document.getElementById("finalizar")
+    BotonFinalizar.addEventListener("click", checkout)
+    const Cancelar = document.getElementById("Cancelar")
+    Cancelar.addEventListener("click",() => {
+        Carrito = {}
+        pintarCarrito ()
+    })
+
 }
 
 const btnAccion = e => {
@@ -136,8 +144,20 @@ e.stopPropagation()
 }
 }
 
-const BotonComprar = document.getElementById("BotonComprar")
-BotonComprar.onclick =() => {
-BotomCompra.addEventListener("submit", (event) => {
-  })
-}
+function checkout() {
+    
+    const modalBody = document.getElementById('checkout')
+
+    let total = Object.values(Carrito).reduce((acc,el)=> acc + (parseInt(el.precio) * el.cantidad),0)
+  
+    let div = document.createElement('div')
+    div.innerHTML= ` <h2>El total de su compra es de $${total}</h2>`
+    modalBody.appendChild(div)
+    const FinalizarOp= document.getElementById("Finalizar_Operacion")
+    FinalizarOp.addEventListener("click", () => {
+        div.innerHTML="" 
+    }
+    );
+    
+ }
+
