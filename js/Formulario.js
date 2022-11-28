@@ -15,7 +15,7 @@ if (this.value.length>=1) {
     });
     
 }
-let validarcorreo = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+let expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
 
 
@@ -29,7 +29,7 @@ if (nombre.value === "" || correo.value === "" || telefono.value === "" || mensa
     Swal.fire("El teléfono ingresado no es un número")
     return false;
   } 
-  else if (validarcorreo.test(correo.value)) {
+  else if (expReg.test(correo.value)) {
     Swal.fire("El mail no es correcto")
     return false;
   } else {
