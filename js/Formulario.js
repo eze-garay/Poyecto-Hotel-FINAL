@@ -37,10 +37,6 @@ if (nombre.value === "" || correo.value === "" || telefono.value === "" || mensa
   }
 }
   
-
-
-
-boton.onclick = () => {
     let formulario = document.getElementById("Form");
     formulario.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -74,5 +70,5 @@ boton.onclick = () => {
         localStorage.setItem("InfoUsuario", JSON.stringify(Usuario))
         formulario.reset();
       }}
-    )}
+    )
 
