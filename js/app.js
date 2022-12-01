@@ -10,6 +10,7 @@ let Carrito = {}
 
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
     fetchData()
     if (localStorage.getItem('carrito')) {
@@ -19,12 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 cards.addEventListener("click", e => {
-    addCarrito(e)
+    addCarrito(e) 
+   
 });
 
 items.addEventListener("click", e => {
     btnAccion(e)
 })
+
+
 
 
 
@@ -58,7 +62,16 @@ const addCarrito = e => {
         setCarrito(e.target.parentElement)
     }
     e.stopPropagation()
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Agregado al carrito',
+        showConfirmButton: false,
+        timer: 1000
+    })
 } 
+
+
 const setCarrito = objeto => {
 const producto = {
     id: objeto.querySelector(".btn-dark").dataset.id,
@@ -159,5 +172,4 @@ function checkout() {
     }
     );
     
- }
-
+ };
